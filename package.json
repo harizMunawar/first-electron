@@ -1,0 +1,27 @@
+{
+  "name": "first-electron",
+  "version": "1.0.0",
+  "description": "Learning Electron",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harizMunawar/first-electron.git"
+  },
+  "author": "harizMunawar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harizMunawar/first-electron/issues"
+  },
+  "homepage": "https://github.com/harizMunawar/first-electron#readme",
+  "devDependencies": {
+    "electron": "^9.1.2",
+    "python-shell": "^2.0.1"
+  },
+  "jshintConfig": {
+    "esversion": 6
+  }
+}
