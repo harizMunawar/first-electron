@@ -2,15 +2,43 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Calling Python from Electron!</title>
+    <title>Calling Python from Electron!</title>    
+    <link rel="stylesheet" href="assets/tailwind/output.css">
 </head>
 
 <body>    
-    <input id="btn" type="button" value="Say hi to Python!"></input>
-    </br>
-    <span id="result"></span>
-    
-    <script src="./renderer.js"></script>
+    <div class="flex items-center justify-center h-screen bg-gray-100">
+        <div class="w-full max-w-xs bg-white">
+            <form action="" class="bg-white rounded shadow rounded-md p-4" id="login_form">
+                <div class="mb-4">
+                    <label for="username" class="block">
+                        Username
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3" type="text" name="username" placeholder="Username" id="username">
+                </div>
+                
+                <div class="mb-4">
+                    <label for="password" class="block">
+                        Password
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3" type="password" name="password" placeholder="Your Password" id="password">
+                </div>
+
+                <div class="flex justify-center">
+                    <button id="btn_login" class="mr-2 bg-blue-500 text-white font-bold py-2 px-4 hover:cursor-pointer hover:bg-blue-700">
+                        Login
+                    </button>
+                    <button id="btn_signup" class="ml-2 bg-blue-500 text-white font-bold py-2 px-4 hover:cursor-pointer hover:bg-blue-700">
+                        Sign Up
+                    </button>
+                </div>
+                <a class="mt-3 inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+                    Forgot Password?
+                </a>
+            </form>
+        </div>
+    </div>
+    <script src="./form.js"></script>
 
 </body>
 </html>
